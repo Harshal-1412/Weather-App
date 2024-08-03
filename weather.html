@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weather.css" />
+</head>
+
+<body>
+
+    <video id="cloudVideo" autoplay muted loop>
+        <source src="images/clouds.mp4" type="video/mp4">
+    </video>
+
+
+    <video id="mistVideo" autoplay muted loop>
+        <source src="images/mist.mp4" type="video/mp4">
+    </video>
+
+    <video id="rainVideo" autoplay muted loop>
+        <source src="images/rain.mp4" type="video/mp4">
+    </video>
+
+    <video id="drizzleVideo" autoplay muted loop>
+        <source src="images/drizzle.mp4" type="video/mp4">
+    </video>
+
+    <video id="clearVideo" autoplay muted loop>
+        <source src="images/clear.mp4" type="video/mp4">
+    </video>
+
+    <video id="hazeVideo" autoplay muted loop>
+        <source src="images/haze.mp4" type="video/mp4">
+    </video>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" />
+            <button>
+                <img src="images/search.png" alt="" />
+            </button>
+
+        </div>
+        <div class="weather">
+            <img src="images/mist.png" class="weather-icon" />
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <p class="condition">Rain</p>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="" />
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png" alt="" />
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="weather.js"></script>
+</body>
+
+</html>
